@@ -12,7 +12,7 @@ const InvoiceForm = () => {
         setError('');
     
         try { 
-            const response = await axios.post('http://localhost:5000/api/invoice', { receiptId });
+            const response = await axios.post('http://196.191.221.71:5000/api/invoice', { receiptId });
             console.log("Response from backend:", response);
             setInvoiceData(response.data.invoiceData);
             setExpanded(false); // Reset the expand state

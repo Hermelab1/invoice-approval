@@ -17,7 +17,7 @@ const InvoiceReport = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/invoicereport');
+                const response = await axios.get('http://196.191.221.71:5000/api/invoicereport');
                 console.log("Response from backend:", response);
 
                 if (Array.isArray(response.data)) {
