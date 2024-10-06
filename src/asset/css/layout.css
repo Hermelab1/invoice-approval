@@ -1,0 +1,46 @@
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.container {
+    display: flex;
+    flex: 1; /* Takes up remaining height */
+}
+
+.sidemenu {
+    background-color: #f4f4f4;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.main-content {
+
+    flex: 1; /* Takes up remaining width */
+    margin-top: 4%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.fade-enter {
+    opacity: 0;
+}
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+.fade-exit {
+    opacity: 1;
+}
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}

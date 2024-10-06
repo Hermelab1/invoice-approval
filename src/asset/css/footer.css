@@ -1,0 +1,13 @@
+.footage {
+    background-color: #F2C94C;
+    width: 83.5%; /* Adjust this width as needed */
+    position: fixed; /* Fixes the element at the bottom of the viewport */
+    bottom: 0; /* Aligns it at the bottom */
+    right: 0%; /* Positions it to the right side of the viewport */ /* Adjust to move it right by half its width */
+    padding: 5px; /* Padding for spacing */
+    text-align: center; /* Center text (optional) */
+
+}
+.footage p {
+    color: #2c3e50; /* Text color */
+}

@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+body{
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  line-height: 1.5rem;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  width: 100%;
+  margin: auto;
+}
+.flex{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+h1, h2, h3, h4 {
+  color: #343A40;           /* Dark gray headers */
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  color: #495057;           /* Slightly lighter gray for paragraphs */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav {
+  background-color: #007BFF; /* Blue navigation bar */
+  color: white;              /* White text */
+}
+
+nav a {
+  color: white;               /* White links in the nav */
+}
+
+nav a:hover {
+  color: #FFC107;            /* Amber on hover */
+}
+
+.sidebar a {
+  color: white;              /* White links in sidebar */
+}
+
+.sidebar a:hover {
+  background-color: #007BFF; /* Highlight with blue on hover */
+}
+
+button {
+  background-color: #007BFF; /* Blue button */
+  color: white;              /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+input[type="text"], input[type="email"], textarea {
+  border: 1px solid #CED4DA; /* Light gray border */
+  border-radius: 5px;
+  padding: 10px;
+  width: 50%;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover {
+  border-color: #007BFF; /* Change border color on hover */
+}
+
+a {
+  color: #007BFF;           /* Blue links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+ul li{
+  list-style: none;
 }

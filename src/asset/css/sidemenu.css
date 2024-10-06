@@ -1,0 +1,96 @@
+.sidebars {
+    width: 252px; /* Sidebar width */
+    height: 100vh; /* Full viewport height */
+    background-color: #2c3e50; /* Background color */
+    color: #ecf0f1; /* Text color */
+    position: fixed; /* Fixed position on the screen */
+    display: block;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Smooth transition for width changes */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.sidebars .container {
+    display: block; /* Ensure that the container is displayed as a block */
+}
+
+.logo img {
+    max-width: 100%; /* Responsive logo */
+    cursor: pointer; /* Pointer cursor for clickable logo */
+}
+
+.sidebar {
+    width: 100%; /* Sidebar takes full width */
+}
+
+.sidebar ul {
+    display: block;
+    list-style: none; /* Remove bullet points from list */
+    padding: 0; /* No padding */
+    margin: 0; /* No margin */
+}
+
+.sidebar li {
+    position: relative; /* Position relative for submenu positioning */
+}
+
+.sidebar a {
+    display: block; /* Block display for links */
+    padding: 15px 20px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    color: #ecf0f1; /* Text color */
+    transition: background 0.3s, color 0.3s; /* Transition effects */
+}
+
+.sidebar a:hover {
+    background-color: #34495e; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+.submenu {
+    display: none; /* Hide submenu initially */
+    background-color: #34495e; /* Submenu background */
+    padding-left: 20px; /* Indent submenu */
+}
+
+.sidebar li:hover .submenu {
+    display: block; /* Show submenu on hover */
+}
+
+.submenu li {
+    position: relative; /* Ensure submenu items are positioned correctly */
+}
+
+.submenu li a {
+    padding: 10px 30px; /* Padding for submenu links */
+}
+
+.submenu li a:hover {
+    background-color: #2980b9; /* Different color for submenu hover */
+}
+
+.submenu .flex {
+    display: block; /* Flexbox layout */
+    
+}
+
+.small {
+    display: none; /* Example class to hide the menu */
+}
+
+/* Add responsive behavior */
+@media (max-width: 768px) {
+    .sidebars {
+        width: 60px; /* Collapsed width for sidebar */
+    }
+    .sidebar li {
+        text-align: center; /* Center text in collapsed view */
+    }
+    .sidebar a {
+        padding: 10px; /* Less padding in collapsed view */
+    }
+    .sidebar a .icon {
+        display: none; /* Hide icons in collapsed view */
+    }
+}
